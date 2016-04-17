@@ -15,12 +15,14 @@
 //Student factory implementation
 RGBImage * ImageFactory::ImplementationStudent::newRGBImage(const int width, const int height) const {
 	return new RGBImageStudent(width, height);
+    
 }
 IntensityImage * ImageFactory::ImplementationStudent::newIntensityImage(const int width, const int height) const {
 	return new IntensityImageStudent(width, height);
 }
 RGBImage * ImageFactory::ImplementationStudent::newRGBImage() const {
 	return new RGBImageStudent();
+    
 }
 IntensityImage * ImageFactory::ImplementationStudent::newIntensityImage() const {
 	return new IntensityImageStudent();
